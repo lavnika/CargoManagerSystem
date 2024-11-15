@@ -1,0 +1,44 @@
+<div class="parent">
+<div class="form-type">
+<h3>GetEmployeeDetails</h3>
+<hr/>
+<div>
+    <div class="col-md-2"></div>
+    <div class="col-md-2">
+       
+        <table class="table table-bordereds">
+            <thead>
+              <tr> <!--row-->
+                <th>EmployeeId</th>
+                <th>firstName</th> <!--column-->
+                <th>lastName</th>
+                <th>username</th>
+                <th>password</th>
+                <th>Role</th>
+                <th>email</th>
+                <th>Address</th>
+                <th>phoneNo</th>
+              </tr>
+            </thead>
+            <tbody *ngFor="let employee of employeelist">
+                <tr>
+                    <td>{{employee.employeeId}}</td>
+                     <td>{{employee.firstName}}</td> <!--{{event.id}}= this called expression in agular ex:<h1>{{5+5}}</h1> the output is 10-->
+                     <td>{{employee.lastName}}</td>
+                     <td>{{employee.username}}</td>
+                     <td>{{employee.password}}</td>
+                     <td>{{employee.role}}</td>
+                     <td>{{employee.email}}</td>
+                     <td>{{employee.address}}</td>
+                     <td>{{employee.phoneNo}}</td>
+                     <!-- <td><button class="btn btn-primary">Edit</button></td> -->
+                     <!-- <td><button class="btn btn-danger" >Delete</button></td> -->
+                </tr>
+            </tbody>
+        </table>
+    
+    </div>
+    <div class="col-md-2"></div>
+</div>
+</div>
+</div>

@@ -1,0 +1,30 @@
+<div class="parent">
+  <div class="form-type">
+<h3>GetAddress</h3>
+<hr/>
+<div>
+    <div class="col-md-2"></div>
+    <div class="col-md-2">
+        <table class="table table-bordereds">
+            <thead>
+              <tr> <!--row-->
+                <th>CargoFareID</th>
+                <th>SourceLocation</th> <!--column-->
+                <th>DestinationLocation</th>
+              </tr>
+            </thead>
+            <tbody *ngFor="let address of addresslist">
+                <tr>
+                     <td>{{address.cargoFareID}}</td>
+                     <td>{{address.sourceLocation}}</td>
+                     <td>{{address.destinationLocation}}</td>
+                     <!-- <td><button class="btn btn-primary">Edit</button></td> -->
+                     <!-- <td><button class="btn btn-danger" >Delete</button></td> -->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+</div>
+</div>

@@ -1,0 +1,31 @@
+<!--WareHouse Details-->
+<h3>Get Ware House Data</h3>
+<hr/>
+<div>
+    <div class="col-md-2"></div>
+    <div class="col-md-2">
+        <table class="table table-bordereds">
+            <thead>
+              <tr> <!--row-->
+                <th>WareHouseID</th>
+                <th>WareHouseName</th>
+                <th>StockStatus</th>
+                <th>Capacity</th>
+                <th>_____Address____</th>
+                <th>CargoBookingId</th>
+              </tr>
+            </thead>
+            <tbody *ngFor="let housedata of warehouselist">
+                <tr>
+                     <td>{{housedata.wareHouseId}}</td>
+                     <td>{{housedata.wareHouseName}}</td>
+                     <td>{{housedata.stockStatus}}</td>
+                     <td>{{housedata.capacity}}</td>
+                     <td>{{housedata.address}}</td>
+                     <td>{{housedata.cargoBookingId}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-2"></div>
+</div>

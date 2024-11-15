@@ -1,0 +1,102 @@
+<div class="parent">
+<div class="form-type">
+<form (ngSubmit)="getCargoFareById()">
+    <label for="cargoFareID">Cargo Booking ID:</label>
+    <input type="number" id="cargoFareID" name="cargoFareID" [(ngModel)]="userInputId" required>
+  
+    <button type="submit">Get Cargo Booking Details</button>
+  </form>
+  
+  <!-- Display Cargo Booking Details -->
+  <div *ngIf="cargoFareData.cargoFareID !== 0">
+    <h2>Cargo Booking Details</h2>
+    <form>
+        <div class="form-inline">
+            <label>
+                cargoBookingId
+            </label>
+            <input type ="text" class ="form-control"  [(ngModel)]="cargoFareData.cargoFareID"  name = "cargoFareID"/>
+     
+        </div>
+        <div class="form-inline">
+            <label>
+                cargoCutsomerId
+            </label>
+            <input type ="text" class ="form-control"  [(ngModel)]="cargoFareData.sourceLocation"  name = "sourceLocation"/>
+     
+        </div>
+        <div class="form-inline">
+            <label>
+                cargoOrderId
+            </label>
+            <input type ="text" class ="form-control"  [(ngModel)]="cargoFareData.destinationLocation"  name = "destinationLocation"/>
+     
+        </div>
+        <div class="form-inline">
+            <label>
+                bookingDate
+            </label>
+            <input type ="text" class ="form-control"  [(ngModel)]="cargoFareData.weight"  name = "weight"/>
+     
+        </div>
+        <div class="form-inline">
+            <label>
+                bookingStatus
+            </label>
+            <input type ="text" class ="form-control"  [(ngModel)]="cargoFareData.volume"  name = "volume"/>
+     
+        </div>
+        <div class="form-inline">
+            <label>
+                bookingDate
+            </label>
+            <input type ="text" class ="form-control"  [(ngModel)]="cargoFareData.modeOfTransport"  name = "modeOfTransport"/>
+     
+        </div>
+        <div class="form-inline">
+            <label>
+                bookingStatus
+            </label>
+            <input type ="text" class ="form-control"  [(ngModel)]="cargoFareData.shippingDate"  name = "shippingDate"/>
+     
+        </div>
+        <div class="form-inline">
+            <label>
+                bookingDate
+            </label>
+            <input type ="text" class ="form-control"  [(ngModel)]="cargoFareData.fareAmount"  name = "fareAmount"/>
+     
+        </div>
+        <div class="form-inline">
+            <label>
+                bookingStatus
+            </label>
+            <input type ="text" class ="form-control"  [(ngModel)]="cargoFareData.arrivalDate"  name = "arrivalDate"/>
+     
+        </div>
+        <div class="form-inline">
+            <label>
+                bookingStatus
+            </label>
+            <input type ="text" class ="form-control"  [(ngModel)]="cargoFareData.additionalCharges"  name = "additionalCharges"/>
+     
+        </div>
+        <div class="form-inline">
+            <label>
+                bookingStatus
+            </label>
+            <input type ="text" class ="form-control"  [(ngModel)]="cargoFareData.totalAmount"  name = "totalAmount"/>
+     
+        </div>
+        <div class="form-inline">
+            <label>
+                bookingStatus
+            </label>
+            <input type ="text" class ="form-control"  [(ngModel)]="cargoFareData.cargoOrderId"  name = "cargoOrderId"/>
+     
+        </div>
+        </form>
+    </div>
+    </div>
+</div>
+        

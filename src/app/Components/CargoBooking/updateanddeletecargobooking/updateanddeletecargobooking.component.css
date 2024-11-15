@@ -1,0 +1,72 @@
+/* Container styles */
+div {
+    margin-top: 30px;
+}
+ 
+  /* Form styles */
+  form {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid rgb(3, 59, 131);
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+ 
+  /* Form labels */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #013151;
+    font-weight: bold;
+  }
+ 
+  /* Form input styles */
+  .form-control {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+ 
+  /* Button styles */
+  .btn-success {
+    background-color: #035b28; /* Green */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+ 
+  .btn-success:hover {
+    background-color: #27ae60; /* Darker green on hover */
+  }
+ 
+  /* Table styles */
+  .table {
+    width: 70%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+  }
+ 
+  /* Table header styles */
+  .table th {
+    background-color: #032e4ace;
+    color: #fff;
+    padding: 10px;
+  }
+ 
+  /* Table cell styles */
+  .table td {
+    border: 1px solid rgba(4, 96, 135, 0.441);
+    padding: 10px;
+  }
+ 
+  /* Apply background pattern to the body */
+  body {
+    background-color: #013945;
+  }

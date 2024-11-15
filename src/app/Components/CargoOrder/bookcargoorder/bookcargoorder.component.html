@@ -1,0 +1,59 @@
+<div class="parent">
+    <div class="form-type">
+<h3>MakeCargoOrder</h3>
+<hr/>
+<form>
+    <div class="form-inline">
+        <label>
+            cargoCutsomerId
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="cargodata.customerId"  name = "customerId"/>
+ 
+    </div>
+    <div class="form-inline">
+        <label>
+            cargoTypeId
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="cargodata.cargoTypeId"  name = "cargoTypeId"/>
+ 
+    </div>
+    <div class="form-inline">
+        <label>
+            Orderdate
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="cargodata.orderDate"  name = "orderDate"/>
+ 
+    </div>
+    <div class="form-inline">
+        <label>
+            Status
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="cargodata.status" name= "status"/>
+ 
+    </div>
+    <div class="form-inline">
+        <label>
+            Location
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="cargodata.location" name= "location"/>
+ 
+    </div>
+    <div class="form-inline">
+        <label>
+            Quantity
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="cargodata.quantity" name= "quantity"/>
+ 
+    </div>
+    <div class="form-inline">
+        <label>
+            ProductId
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="cargodata.productId" name= "productId"/>
+ 
+    </div>
+    <input type="button"(click)="addCargoOrders()" value="Save" class="btn btn-success" />
+    
+</form>
+</div>
+</div>

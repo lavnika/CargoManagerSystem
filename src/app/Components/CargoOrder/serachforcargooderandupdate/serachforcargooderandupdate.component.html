@@ -1,0 +1,75 @@
+<div class="parent">
+    <div class="form-type">
+<form (ngSubmit)="getCargoOrdderById()">
+    <label for="cargoId">Cargo Order ID:</label>
+    <input type="number" id="cargoId" name="cargoId" [(ngModel)]="userInputcargoId" required>
+  
+    <button type="submit">Get Cargo Order Details</button>
+  </form>
+  
+  <!-- Display Cargo Order Details -->
+  <div *ngIf="cargodata.cargoOrderId !== 0">
+    <h2>Cargo Order Details and Update</h2>
+    <form>
+        <!-- <div>
+            <label>
+                CargoOrderId
+            </label>
+            <input type ="text" class ="form-control"  [(ngModel)]="cargodata.cargoOrderId"  name = "cargoOrderId"/>
+     
+        </div> -->
+        <div>
+            <label>
+                CustomerId
+            </label>
+            <input type ="text" class ="form-control"  [(ngModel)]="cargodata.customerId"  name = "customerId"/>
+     
+        </div>
+        <div>
+            <label>
+                LastName
+            </label>
+            <input type ="text" class ="form-control"  [(ngModel)]="cargodata.cargoTypeId" name= "cargoTypeId"/>
+     
+        </div>
+        <div>
+            <label>
+                username
+            </label>
+            <input type ="text" class ="form-control"  [(ngModel)]="cargodata.orderDate" name= "orderDate"/>
+     
+        </div>
+        <div>
+            <label>
+                password
+            </label>
+            <input type ="text" class ="form-control"  [(ngModel)]="cargodata.status" name= "status"/>
+     
+        </div>
+        <div>
+            <label>
+                email
+            </label>
+            <input type ="text" class ="form-control"  [(ngModel)]="cargodata.location" name= "location"/>
+     
+        </div>
+        <div>
+            <label>
+                address
+            </label>
+            <input type ="text" class ="form-control"  [(ngModel)]="cargodata.quantity" name= "quantity"/>
+     
+        </div>
+        <div>
+            <label>
+                Phoneno
+            </label>
+            <input type ="text" class ="form-control"  [(ngModel)]="cargodata.productId" name= "productId"/>
+     
+        </div>
+        <input type="button"(click)=" updateCargoOrder()" value="Edit" class="btn btn-success" />
+        <!-- <input type="button"(click)="deleteEmployeeById()"value="Delete" class="btn btn-danger"/> -->
+    </form>
+  </div>
+  </div>
+  </div>

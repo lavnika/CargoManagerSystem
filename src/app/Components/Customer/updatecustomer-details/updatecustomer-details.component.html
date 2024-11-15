@@ -1,0 +1,76 @@
+<div class="parent">
+    <div class="form-type">
+<h3>Update Customer Details</h3>
+<div><label for="customerId">Enter Customer ID:</label>
+    <input type="number" id="customerId" [(ngModel)]="userInputId" />
+    <button (click)="getCustomerById()">Get Customer Details</button>
+    <div *ngIf="customerDetails">
+        <form>
+            <!-- <div>
+                <label>
+                    CustomerId
+                </label>
+                <input type ="text" class ="form-control"  [(ngModel)]="customerDetails.customerId"  name = "customerId"/>
+         
+            </div> -->
+            <div class="form-inline">
+                <label>
+                    FirstName
+                </label>
+                <input type ="text" class ="form-control"  [(ngModel)]="customerDetails.firstName"  name = "firstName"/>
+         
+            </div>
+            <div class="form-inline">
+                <label>
+                    LastName
+                </label>
+                <input type ="text" class ="form-control"  [(ngModel)]="customerDetails.lastName" name= "lastName"/>
+         
+            </div>
+            <div class="form-inline">
+                <label>
+                    username
+                </label>
+                <input type ="text" class ="form-control"  [(ngModel)]="customerDetails.username" name= "username"/>
+         
+            </div>
+            <div class="form-inline">
+                <label>
+                    password
+                </label>
+                <input type ="text" class ="form-control"  [(ngModel)]="customerDetails.password" name= "password"/>
+         
+            </div>
+            <div class="form-inline">
+                <label>
+                    Role
+                </label>
+                <input type ="text" class ="form-control"  [(ngModel)]="customerDetails.role" name= "role"/>
+         
+            </div>
+            <div class="form-inline">
+                <label>
+                    email
+                </label>
+                <input type ="text" class ="form-control"  [(ngModel)]="customerDetails.email" name= "email"/>
+         
+            </div>
+            <div class="form-inline">
+                <label>
+                    address
+                </label>
+                <input type ="text" class ="form-control"  [(ngModel)]="customerDetails.address" name= "address"/>
+         
+            </div>
+            <div class="form-inline">
+                <label>
+                    Phoneno
+                </label>
+                <input type ="text" class ="form-control"  [(ngModel)]="customerDetails.phoneNo" name= "phoneNo"/>
+         
+            </div>
+            <input type="button"(click)="updateCustomer()" value="Update" class="btn btn-success" />
+           
+        </form>
+    </div>
+    </div>

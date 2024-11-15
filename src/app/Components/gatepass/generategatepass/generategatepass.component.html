@@ -1,0 +1,42 @@
+<!--Generate gate Pass -->
+<div class="parent">
+    <div class="form-type">
+<h3>Generating Gate Pass</h3>
+<div>
+  <form (submit)="generategatepass()">
+    <div class="form-inline">
+        <label>
+            gatePassNumber
+        </label>
+        <input type ="text" class ="form-control" [(ngModel)]="gatepassdata.gatePassNumber"  name = "gatePassNumber"/>
+    </div>
+    <div class="form-inline">
+        <label>
+            cargoBookingId
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="gatepassdata.cargoBookingId" name= "cargoBookingId"/>
+    </div>
+    <div class="form-inline">
+        <label>
+            entryDate
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="gatepassdata.entryDate" name= "entryDate"/>
+    </div>
+    <div class="form-inline">
+        <label>
+            exitDate
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="gatepassdata.exitDate" name= "exitDate"/>
+    </div>
+    <div class="form-inline">
+        <label>
+            typeOfDelivery
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="gatepassdata.typeOfDelivery" name= "typeOfDelivery"/>
+    </div>
+    <input type="button"(click)="generategatepass()" value="Save" class="btn btn-success" />
+    <!--input type="button" value="Reset" class="btn btn-secondary" /-->
+  </form>
+</div>
+</div>
+</div>

@@ -1,0 +1,78 @@
+<div class="parent">
+    <div class="form-type">
+<h3>Calculating Cargo Price</h3>
+<div>
+  <form (submit)="calculateCargoPrice()">
+    
+    <div class="form-inline">
+        <label>
+            sourceLocation
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="cargoFareData.sourceLocation" name= "sourceLocation"/>
+    </div>
+    <div class="form-inline">
+        <label>
+            destinationLocation
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="cargoFareData.destinationLocation" name= "destinationLocation"/>
+    </div>
+    <div class="form-inline">
+        <label>
+            weight
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="cargoFareData.weight" name= "weight"/>
+    </div>
+     <div class="form-inline">
+        <label>
+            volume
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="cargoFareData.volume" name= "volume"/>
+    </div>
+    <div class="form-inline">
+        <label>
+            modeOfTransport
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="cargoFareData.modeOfTransport" name= "modeOfTransport"/>
+    </div>
+    < <div class="form-inline">
+        <label>
+            shippingDate
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="cargoFareData.shippingDate" name= "shippingDate"/>
+    </div>
+    <div class="form-inline">
+        <label>
+            arrivalDate
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="cargoFareData.arrivalDate" name= "arrivalDate"/>
+    </div>
+    <div class="form-inline">
+        <label>
+            fareAmount
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="cargoFareData.fareAmount" name= "fareAmount"/>
+    </div>
+    <div class="form-inline">
+        <label>
+            additionalCharges
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="cargoFareData.additionalCharges" name= "additionalCharges"/>
+    </div>
+    <div class="form-inline">
+        <label>
+            totalAmount
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="cargoFareData.totalAmount" name= "totalAmount"/>
+    </div>
+    <div class="form-inline">
+        <label>
+            cargoOrderId
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="cargoFareData.cargoOrderId" name= "cargoOrderId"/>
+    </div>
+    <input type="button"(click)="calculateCargoPrice()" value="Save" class="btn btn-success" />
+    <!--input type="button" value="Reset" class="btn btn-secondary" /-->
+  </form>
+</div>
+</div>
+</div>

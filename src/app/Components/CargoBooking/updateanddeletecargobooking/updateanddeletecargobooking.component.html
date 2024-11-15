@@ -1,0 +1,57 @@
+<div class="parent">
+    <div class="form-type">
+<h3>GetCargoBookingById</h3>
+
+<form (ngSubmit)="getCargoBookingId()">
+    <label for="cargoBookingId">Cargo Booking ID:</label>
+    <input type="number" id="cargoBookingId" name="cargoBookingId" [(ngModel)]="userInputcargoBookingId" required>
+  
+    <button type="submit">Get Cargo Booking Details</button>
+  </form>
+  
+  <!-- Display Cargo Booking Details -->
+  <div *ngIf="cargoBookingdata.cargoBookingId !== 0">
+    <h2>Cargo Booking Details</h2>
+    <form>
+        <div>
+            <label>
+                cargoBookingId
+            </label>
+            <input type ="text" class ="form-control"  [(ngModel)]="cargoBookingdata.cargoBookingId"  name = "cargoBookingId"/>
+     
+        </div>
+        <div>
+            <label>
+                cargoCutsomerId
+            </label>
+            <input type ="text" class ="form-control"  [(ngModel)]="cargoBookingdata.cargoFareID"  name = "cargoFareID"/>
+     
+        </div>
+        <div>
+            <label>
+                cargoOrderId
+            </label>
+            <input type ="text" class ="form-control"  [(ngModel)]="cargoBookingdata.cargoorderid"  name = "cargoOrderId"/>
+     
+        </div>
+        <div>
+            <label>
+                bookingDate
+            </label>
+            <input type ="text" class ="form-control"  [(ngModel)]="cargoBookingdata.bookingDate"  name = "bookingDate"/>
+     
+        </div>
+        <div>
+            <label>
+                bookingStatus
+            </label>
+            <input type ="text" class ="form-control"  [(ngModel)]="cargoBookingdata.bookingStatus"  name = "bookingStatus"/>
+     
+        </div>
+    </form>
+    <input type="button"(click)="updateCargoOrder()" value="Update" class="btn btn-success" />
+    <input type="button"(click)="deleteCargoBookingById()"value="Delete" class="btn btn-danger"/> 
+  </div>
+  </div>
+  </div>
+  

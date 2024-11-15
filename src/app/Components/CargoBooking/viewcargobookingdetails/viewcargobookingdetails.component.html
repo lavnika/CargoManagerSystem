@@ -1,0 +1,35 @@
+<div class="parent">
+  <div class="form-type">
+<h3>GetAllCargoBookingDetails</h3>
+<hr/>
+<div>
+    <div class="col-md-2"></div>
+    <div class="col-md-2">
+        <table class="table table-bordereds">
+            <thead>
+              <tr> <!--row-->
+                <th>CargoBookinId</th> <!--column-->
+                <th>CargoFareID</th>
+                <th>CargoOrderID</th>
+                <th>BookingDate</th>
+                <th>BookingStaus</th>
+              </tr>
+            </thead>
+            <tbody *ngFor="let cargoBookingdata of cargobookingDetails ">
+                <tr>
+                     <td>{{cargoBookingdata.cargoBookingId}}</td> <!--{{event.id}}= this called expression in agular ex:<h1>{{5+5}}</h1> the output is 10-->
+                     <td>{{cargoBookingdata.cargoFareID}}</td>
+                     <td>{{cargoBookingdata.cargoorderid}}</td>
+                     <td>{{cargoBookingdata.bookingDate}}</td>
+                     <td>{{cargoBookingdata.bookingStatus}}</td>
+                
+                     <!-- <td><button class="btn btn-primary">Edit</button></td> -->
+                     <!-- <td><button class="btn btn-danger" >Delete</button></td> -->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+</div>
+</div>

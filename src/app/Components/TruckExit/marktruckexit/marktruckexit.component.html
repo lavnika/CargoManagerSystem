@@ -1,0 +1,30 @@
+<h3>Mark Truck Exit</h3>
+<div>
+  <form (submit)="MarkTruckExit()">
+    <div class="form-group">
+        <label>
+            truckExitId
+        </label>
+        <input type ="text" class ="form-control" [(ngModel)]="truckexitdata.truckExitId"  name = "truckExitId"/>
+    </div>
+    <div class="form-group">
+        <label>
+            cargoBookingId
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="truckexitdata.cargoBookingId" name= "cargoBookingId"/>
+    </div>
+    <div class="form-group">
+        <label>
+            exitDate
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="truckexitdata.exitDate" name= "exitDate"/>
+    </div>
+    <div class="form-group">
+        <label>
+            reason
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="truckexitdata.reason" name= "reason"/>
+    </div>
+    <input type="button"(click)="MarkTruckExit()" value="Save" class="btn btn-success" />
+  </form>
+</div>

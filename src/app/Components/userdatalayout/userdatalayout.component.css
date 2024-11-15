@@ -1,0 +1,48 @@
+.parent{
+  background: url("https://images.pexels.com/photos/3840441/pexels-photo-3840441.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  .form-type{
+    margin-top: 200px;
+  }
+body {
+    background-color: #f8f9fa;
+    padding: 20px;
+  }
+ 
+  .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+ 
+  .option-box {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+ 
+  .option-box:hover {
+    transform: scale(1.05);
+  }
+ 
+  h4 {
+    color: #343a40;
+  }
+ 
+  p {
+    color: #6c757d;
+  }
+ 
+  .btn-option {
+    margin-top: 10px;
+  }

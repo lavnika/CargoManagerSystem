@@ -1,0 +1,38 @@
+<div class="parent">
+    <div class="form-type">
+<h3>AddCargoBooking</h3>
+<hr/>
+<form>
+    <div>
+        <label>
+            cargoCutsomerId
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="cargoBookingdata.cargoFareID"  name = "cargoFareID"/>
+ 
+    </div>
+    <div>
+        <label>
+            cargoOrderId
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="cargoBookingdata.cargoorderid"  name = "cargoOrderId"/>
+ 
+    </div>
+    <div>
+        <label>
+            bookingDate
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="cargoBookingdata.bookingDate"  name = "bookingDate"/>
+ 
+    </div>
+    <div>
+        <label>
+            bookingStatus
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="cargoBookingdata.bookingStatus"  name = "bookingStatus"/>
+ 
+    </div>
+    <input type="button"(click)="AddCargoBooking()" value="Save" class="btn btn-success" />
+    <input type="button" value="Reset" class="btn btn-secondary" />
+</form>
+    </div>
+</div>

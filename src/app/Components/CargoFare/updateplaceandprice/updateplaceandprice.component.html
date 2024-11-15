@@ -1,0 +1,62 @@
+<div class="parent">
+    <div class="form-type">
+<form (ngSubmit)="getCargoFareById()">
+    <label for="cargoFareID">Cargo Booking ID:</label>
+    <input type="number" id="cargoFareID" name="cargoFareID" [(ngModel)]="userInputId" required>
+  
+    <button type="submit">Get Cargo Booking Details</button>
+  </form>
+  
+  <!-- Display Cargo Booking Details -->
+  <div *ngIf="cargoFareData.cargoFareID !== 0">
+    <h2>Cargo Booking Details</h2>
+    <form>
+        
+        <div>
+            <label>
+                SourceLocation
+            </label>
+            <input type ="text" class ="form-control"  [(ngModel)]="cargoFareData.sourceLocation"  name = "sourceLocation"/>
+     
+        </div>
+        <div>
+            <label>
+                destinationLocation
+            </label>
+            <input type ="text" class ="form-control"  [(ngModel)]="cargoFareData.destinationLocation"  name = "destinationLocation"/>
+     
+        </div>
+        <div>
+            <label>
+                bookingDate
+            </label>
+            <input type ="text" class ="form-control"  [(ngModel)]="cargoFareData.fareAmount"  name = "fareAmount"/>
+     
+        </div>
+        <div>
+            <label>
+                bookingStatus
+            </label>
+            <input type ="text" class ="form-control"  [(ngModel)]="cargoFareData.arrivalDate"  name = "arrivalDate"/>
+     
+        </div>
+        <div>
+            <label>
+                bookingStatus
+            </label>
+            <input type ="text" class ="form-control"  [(ngModel)]="cargoFareData.additionalCharges"  name = "additionalCharges"/>
+     
+        </div>
+        <div>
+            <label>
+                bookingStatus
+            </label>
+            <input type ="text" class ="form-control"  [(ngModel)]="cargoFareData.totalAmount"  name = "totalAmount"/>
+     
+        </div>
+        <input type="button"(click)="updateCargoFarePlaceAndPrice()" value="Update" class="btn btn-success" />
+
+        </form>
+    </div>
+</div>
+</div>

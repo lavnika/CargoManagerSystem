@@ -1,0 +1,68 @@
+<div class="parent">
+    <div class="form-type">
+<h3>Add Customer Details</h3>
+<hr/>
+<form>
+
+    <div  class ="form-inline" >
+        <label>
+            FirstName
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="customerdata.firstName"  name = "firstName"/>
+ 
+    </div>
+    <div  class ="form-inline" >
+        <label>
+            LastName
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="customerdata.lastName" name= "lastName"/>
+ 
+    </div>
+    <div  class ="form-inline" >
+        <label>
+            username
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="customerdata.username" name= "username"/>
+ 
+    </div>
+    <div  class ="form-inline" >
+        <label>
+            password
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="customerdata.password" name= "password"/>
+ 
+    </div>
+    <div  class ="form-inline" >
+        <label>
+            Role
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="customerdata.role" name= "role"/>
+ 
+    </div>
+    <div  class ="form-inline" >
+        <label>
+            email
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="customerdata.email" name= "email"/>
+ 
+    </div>
+    <div  class ="form-inline" >
+        <label>
+            address
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="customerdata.address" name= "address"/>
+ 
+    </div>
+    <div  class ="form-inline" >
+        <label>
+            Phoneno
+        </label>
+        <input type ="text" class ="form-control"  [(ngModel)]="customerdata.phoneNo" name= "phoneNo"/>
+ 
+    </div>
+    <input type="button"(click)="addCustomer()" value="Save" class="btn btn-success" />
+    
+</form>
+</div>
+</div>
+

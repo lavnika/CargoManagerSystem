@@ -1,0 +1,42 @@
+<div class="parent">
+  <div class="form-type">
+<h4>Get Admin Details</h4>
+<hr/>
+<div>
+    <div class="col-md-2"></div>
+    <div class="col-md-2">
+        <table class="table table-bordereds">
+            <thead>
+              <tr> <!--row-->
+                <th>AdminId</th>
+                <th>FirstName</th> <!--column-->
+                <th>LastName</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Role</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>PhoneNo</th>
+              </tr>
+            </thead>
+            <tbody *ngFor="let admin of adminlist">
+                <tr>
+                     <td>{{admin.adminId}}</td>
+                     <td>{{admin.firstName}}</td>
+                     <td>{{admin.lastName}}</td>
+                     <td>{{admin.username}}</td>
+                     <td>{{admin.password}}</td>
+                     <td>{{admin.role}}</td>
+                     <td>{{admin.email}}</td>
+                     <td>{{admin.address}}</td>
+                     <td>{{admin.phoneNo}}</td>
+                     <!-- <td><button class="btn btn-primary">Edit</button></td> -->
+                     <!-- <td><button class="btn btn-danger" >Delete</button></td> -->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+</div>
+</div>

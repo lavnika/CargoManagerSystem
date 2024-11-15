@@ -1,0 +1,104 @@
+.parent {
+  background: url("https://images.pexels.com/photos/3840441/pexels-photo-3840441.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-type {
+  display:block;
+  margin-top: 20px;
+  background-color:white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 50%;
+}
+
+
+div {
+    margin-top: 30px;
+}
+ 
+  /* Form labels */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #013151;
+    font-weight: bold;
+  }
+ 
+  /* Form input styles */
+  .form-control {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+ 
+  /* Button styles */
+  .btn-success {
+    background-color: #035b28; /* Green */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+ 
+  .btn-success:hover {
+    background-color: #035b28; /* Darker green on hover */
+  }
+ 
+  .btn-secondary {
+    background-color: #34495e; /* Dark gray */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+ 
+  .btn-secondary:hover {
+    background-color: #025bb5; /* Slightly darker gray on hover */
+  }
+ 
+  /* Table styles */
+  .table {
+    margin-left: 30px;
+    width: 70%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+  }
+ 
+  /* Table header styles */
+  .table th {
+    
+    background-color: #032e4ace;
+    color: #fff;
+    padding: 10px;
+  }
+ 
+  /* Table cell styles */
+  .table td {
+    border: 1px solid rgba(4, 96, 135, 0.441);
+    padding: 10px;
+  }
+ 
+  /* Input and button styles for employee details update and delete section */
+  #employeeId {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+ 
+  /* Apply background pattern to the body */
+  body {
+    background-color: #013945;
+  }
